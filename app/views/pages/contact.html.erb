@@ -1,0 +1,40 @@
+<div id="contact">
+  <header>
+<!--   <div class="logo">
+    <%= link_to image_tag("images/logo2.jpg"), "index" %>
+  </div> -->
+    <div class="container">
+      <h1>Get in touch or follow me online</h1>
+      <h3>Send me an email at <a href="mailto:lucasraert@gmail.com">lucasraert@gmail.com</a> and I will get back to you as soon as possible.</h3>
+    </div>
+    <div class="social-container">
+      <ul class="social">
+        <li><%= link_to image_tag('linkedin.svg'), "http://www.linkedin.com/in/lucasraert" %></li>
+        <li><%= link_to image_tag('github-logo.svg'), "http://www.github.com/lucasraert" %></li>
+        <li><%= link_to image_tag('twitter.svg'), "http://www.twitter.com/lucasraert" %></li>
+        <li><%= link_to image_tag('instagram.svg'), "http://www.instagram.com/lucasraert" %></li>
+      </ul>
+    </div>
+  </header>
+</div>
+
+
+<% content_for(:after_js) do %>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $('.container').hide().show( "drop", { direction: "down"}, 300 );
+    $('.social-container').hide().show( "drop", { direction: "down"}, 800 );
+    $('.menu').hide();
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#contact').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

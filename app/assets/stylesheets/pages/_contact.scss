@@ -1,0 +1,131 @@
+#contact {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+#contact header {
+  min-height: calc(100vh - 125px);
+  // max-height: calc((100vh - 495px)/1.5);
+  margin: 0 120px;
+  position: relative;
+}
+
+#contact header>.container {
+  bottom: calc(50vh - 40px);
+}
+
+#contact header .social-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  padding: 0;
+}
+
+#contact header {
+  h1, h3 {
+  position: relative;
+  top: 72px;
+  max-width: 920px;
+  margin: 20px auto;
+  text-align: center;
+  }
+}
+
+#contact .social>li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#contact .social img {
+  width: 48px;
+  height: auto;
+}
+
+#contact .container h3>a {
+  color: #262626;
+  border-bottom: 1px solid rgba(38,38,38,0.3);
+  padding-bottom: 5px;
+  transition: all 0.5s ease;
+  &:hover {
+    color: #4285F4;
+    border-bottom: 1px solid #4285F4;
+    text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  #contact header>.container {
+    bottom: 50vh;
+  }
+   #contact header {
+    margin: 0 30px;
+    h1, h3 {
+      max-width: 200px;
+    }
+  }
+  #contact header .social-container {
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #contact header>.container {
+    bottom: 50vh;
+  }
+  #contact header {
+    margin: 0 40px;
+    h1, h3 {
+      max-width: 260px;
+    }
+  }
+  #contact header .social-container {
+    width: 280px;
+    margin-left: -140px;
+    bottom: 0;
+  }
+  #contact .social> li {
+    margin: 15px 30px;
+  }
+  #contact .social img {
+  width: 30px;
+  height: auto;
+}
+}
+
+@media screen and (max-width: 1280px) {
+  #contact header {
+    margin: 0 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #contact header>.container {
+    bottom: 50vh;
+  }
+}
+@media screen and (max-width: 776px) {
+  #contact header>.container {
+    bottom: 50vh;
+  }
+   #contact header {
+    h1, h3 {
+      max-width: 420px;
+    }
+  }
+}
+
+@media (max-height: 590px) and (orientation: landscape) {
+  #contact header>.container {
+    margin: 0 auto 40px;
+    position: static;
+  }
+  #contact header>.social-container {
+    margin: 150px auto 50px;
+    position: static;
+  }
+}

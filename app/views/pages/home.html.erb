@@ -1,2 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="home">
+  <div class="container">
+    <h1>I'm a Product Designer based in Paris.</br>I conceive, design and build online experiences. </h1>
+  </div>
+</div>
+
+<% content_for(:after_js) do %>
+<script>
+  $(document).ready(function() {
+    $('.menu').hide();
+    $('.navbar').hide().show( "fade", 300 );
+    $('#home').hide().show( "fade", 600 );
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#home').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

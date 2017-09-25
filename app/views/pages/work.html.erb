@@ -1,0 +1,47 @@
+<div id="calypso" class="work">
+  <header>
+    <div class="container">
+      <h1>Calypso</h1>
+      <h3>Turn everyone into surf travel agents.</h3>
+  <!-- <div class="button-container">
+    <a href="https://www.calypso.surf" target="_blank">
+      <div class="button flex">
+        <p>VISIT WEBSITE</p>
+      </div>
+    </a>
+  </div> -->
+    </div>
+  </header>
+  <section class="mockup block-image calypsodesktop">
+    <%= image_tag 'calypsodesk.jpg' %>
+  </section>
+  <section class="block-text">
+    <h3>Calypso brings surf enthusiasts together in hundreds of cities to do more of what they love by finding and create city-to-spot car journeys based on their location.</h3>
+  </section>
+  <section class="block-image">
+    <%= image_tag 'calypsostyle.jpg' %>
+    <%= image_tag 'surfers.jpeg' %>
+  </section>
+  <section class="block-text">
+    <h3>This project was an opportonutiy to give me more experience developping Ruby on Rails applications.</h3>
+  </section>
+</div>
+
+<% content_for(:after_js) do %>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.menu').hide();
+    $('header').hide().show( "drop", { direction: "down"}, 400 );
+    $('.mockup').hide().show( "drop", { direction: "down"}, 500 );
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#calypso').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

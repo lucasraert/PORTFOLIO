@@ -1,0 +1,39 @@
+<div id="about">
+  <section class="block-text" id="aboutme">
+    <h1>About me</h1>
+    <p class='u-margin-top-text'>I’m a product designer specializing in web based projects. I help my clients to create successful digital services through creative and engaging experiences. As a self-taught designer with a business background, I always make sure to produce work that generate rich business outcomes.</p>
+  </section>
+  <section class="block-text" id="services">
+    <h1 class="u-padding-top">What I can do for you</h1>
+    <p class='u-margin-top-text'>Need a new website? Need to create a better workflow for your app? Need branding and identity? Or just want to discuss and get some advice? These are some of the ways I can help.</p>
+  </section>
+  <section class="block-text">
+    <h1>Key skills</h1>
+    <ul class="skills">
+      <li>HTML/CSS</li>
+      <li>Javascript</li>
+      <li>Ruby on Rails</li>
+      <li>User Experience</li>
+      <li>User Interface Design</li>
+    </ul>
+  </section>
+</div>
+
+<% content_for(:after_js) do %>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#aboutme').hide().show( "drop", { direction: "down"}, 300 );
+    $('#services').hide().show( "drop", { direction: "down"}, 800 );
+    $('.menu').hide();
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#about').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

@@ -1,0 +1,47 @@
+#about .block-text h1 {
+  text-align: center;
+}
+
+#about section p {
+  margin: 40px 120px 0 120px;
+}
+
+#about section {
+  padding: 100px 0;
+}
+
+#about ul {
+  padding: 0;
+  margin-top: 40px;
+}
+
+#about .skills> li {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #about section {
+    padding: 80px 0;
+  }
+  #about section p {
+    margin: 0;
+  }
+  #about ul {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about section {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  #about section {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  #about section {
+    padding: 30px 0;
+  }
+}
