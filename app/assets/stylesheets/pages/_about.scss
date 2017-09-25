@@ -10,14 +10,34 @@
   padding: 100px 0;
 }
 
+#about section:last-child {
+  padding: 100px 0 200px;
+}
+
 #about ul {
   padding: 0;
   margin-top: 40px;
 }
 
-#about .skills> li {
+#about .skills> li p {
   text-align: center;
+  padding: 0 40px;
+  margin: 0 !important;
 }
+
+#about .icon {
+  font-size: 80px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#about .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media screen and (max-width: 1024px) {
   #about section {
@@ -38,6 +58,18 @@
 @media screen and (max-width: 560px) {
   #about section {
     padding: 40px 0;
+  }
+  #about .icon {
+    font-size: 50px;
+  }
+  #about section:last-child {
+    padding: 0px 0px 100px;
+  }
+  #about .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 320px) {

@@ -5,7 +5,7 @@
 }
 
 #contact header {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 150px);
   margin: 0 120px;
   position: relative;
 }
@@ -97,7 +97,7 @@
 }
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 990px) {
   #contact header {
     height: 100vh;
   }
@@ -121,7 +121,7 @@
 @media screen and (max-width: 1280px) {
   #contact header {
     margin: 0 60px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 125px);
   }
   #contact header>.container {
     bottom: 50vh;
@@ -151,6 +151,6 @@
 @media (max-height: 560px) and (max-width: 1280px) and (orientation: landscape) {
   header {
     margin: 0 60px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 150px);
   }
 }
