@@ -30,6 +30,7 @@
 <% content_for(:after_js) do %>
 <script type="text/javascript">
   $(document).ready(function() {
+    $('.menu').hide();
     $('header').hide().show( "drop", { direction: "down"}, 400 );
     $('.mockup').hide().show( "drop", { direction: "down"}, 500 );
   });
