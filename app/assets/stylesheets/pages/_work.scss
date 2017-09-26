@@ -66,19 +66,19 @@ section {
 
 #calypso #desktop {
   position: relative;
-  padding: 105px;
-  background-color: #F6F6F6;
-  background-size: 90% auto;
+  // padding: 105px;
+  background-color: #EBEFF3;
+  background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: image-url('desktop.jpg');
+  background-image: image-url('calypsobg.jpg');
 }
 
 #calypso #desktop::before {
   display: block;
   content: "";
   width: 100%;
-  padding-top: 75%;
+  padding-top: 60%;
 }
 
 #calypso #style {
@@ -92,7 +92,7 @@ section {
 #calypso #style::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 90%;
   padding-top: 100%;
 }
 
