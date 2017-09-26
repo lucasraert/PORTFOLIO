@@ -59,6 +59,11 @@ section {
   padding: 0;
 }
 
+.inner-shadow {
+  box-shadow: inset 0 30px 30px -30px rgba(0,0,0,0.2), inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+}
+
+
 #calypso #desktop {
   position: relative;
   padding: 105px;
@@ -66,7 +71,7 @@ section {
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: image-url('calypsodesk.jpg');
+  background-image: image-url('desktop.jpg');
 }
 
 #calypso #desktop::before {
@@ -76,6 +81,14 @@ section {
   padding-top: 85%;
 }
 
+#calypso #style {
+  position: relative;
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: image-url('sstyle.jpg');
+}
+
 #calypso #style::before {
   display: block;
   content: "";
@@ -83,17 +96,19 @@ section {
   padding-top: 100%;
 }
 
-.inner-shadow {
-  box-shadow: inset 0 30px 30px -30px rgba(0,0,0,0.2), inset 0 -30px 30px -30px rgba(0,0,0,0.2);
-}
-
-
-#calypso #style {
+#calypso #iphone {
   position: relative;
+  background-image: image-url('iphonecalypso.jpeg');
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: image-url('stylecalypso.jpg');
+}
+
+#calypso #iphone::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 66.5%;
 }
 
 
@@ -123,14 +138,14 @@ main.work>section p {
 
 #logo {
   display: block;
-  width: 226px;
+  width: 156px;
   height: 58px;
   position: absolute;
   left: 50vw;
   top: 110px;
-  margin-left: -113px;
+  margin-left: -78px;
   background: image-url('logo3.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 156px auto;
   cursor: pointer;
   z-index: 5;
 }
@@ -171,14 +186,19 @@ main.work>section p {
 @media screen and (max-width: 560px) {
   #calypso header {
     margin: 0 40px;
-    // min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
   }
   .block-text {
     margin: 0 40px;
   }
   #logo {
+    width: 150px;
     height: 40px;
-    background-size: auto 40px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    margin-left: 40px;
+    background-size: 150px auto;
   }
 }
 @media screen and (max-width: 320px) {
@@ -187,7 +207,7 @@ main.work>section p {
     // min-height: calc(100vh - 60px);
   }
   #logo {
-    top: 45px;
+    top: 25px;
   }
 }
 @media (max-height: 590px) and (orientation: landscape) {
