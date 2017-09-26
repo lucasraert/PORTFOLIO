@@ -68,8 +68,8 @@ section {
   position: relative;
   padding: 105px;
   background-color: #F6F6F6;
-  background-size: 100% auto;
-  background-position: center top;
+  background-size: 90% auto;
+  background-position: center center;
   background-repeat: no-repeat;
   background-image: image-url('desktop.jpg');
 }
@@ -78,7 +78,7 @@ section {
   display: block;
   content: "";
   width: 100%;
-  padding-top: 85%;
+  padding-top: 75%;
 }
 
 #calypso #style {
@@ -98,7 +98,7 @@ section {
 
 #calypso #iphone {
   position: relative;
-  background-image: image-url('iphonecalypso.jpeg');
+  background-image: image-url('iphone.jpeg');
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
