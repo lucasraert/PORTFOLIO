@@ -18,6 +18,8 @@
   box-sizing: border-box;
 }
 
+
+
 #home>.container h1 {
   position: relative;
   top: 21px;
@@ -27,11 +29,21 @@
   #home .container {
     padding: 135px 40px 30px;
   }
+
+
+  #home>.container img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 320px) {
   #home>.container {
     padding: 30px 30px 110px;
+  }
+  #home>.container img {
+    width: 50px;
+    height: auto;
   }
 }
 
@@ -39,16 +51,28 @@
   #home>.container {
     padding: 30px 40px 135px;
   }
+  #home>.container img {
+    width: 100px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #home>.container {
     padding: 40px 60px 60px;
   }
+  #home>.container img {
+    width: 140px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   #home>.container {
     padding: 60px;
+  }
+  #home>.container img {
+    width: 170px;
+    height: auto;
   }
 }

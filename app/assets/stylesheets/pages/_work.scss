@@ -93,7 +93,7 @@ section {
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: image-url('style.jpg');
+  background-image: image-url('stylecalypso.jpg');
 }
 
 
@@ -124,14 +124,20 @@ main.work>section p {
 #logo {
   display: block;
   width: 226px;
-  height: 80px;
+  height: 58px;
   position: absolute;
   left: 50vw;
   top: 110px;
   margin-left: -113px;
-  background: url(images/logo2.jpg) no-repeat center center;
-  background-size: auto 80px;
+  background: image-url('logo3.jpg') no-repeat center center;
+  background-size: cover;
   cursor: pointer;
+  z-index: 5;
+}
+
+#logo:link {
+  color: transparent;
+  text-decoration: none;
 }
 
 
@@ -147,6 +153,13 @@ main.work>section p {
     margin: 0 120px;
   }
 }
+
+@media screen and (max-width: 990px) {
+  #logo {
+    top: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .block-text {
     width: auto;
@@ -154,6 +167,7 @@ main.work>section p {
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 560px) {
   #calypso header {
     margin: 0 40px;
@@ -162,11 +176,18 @@ main.work>section p {
   .block-text {
     margin: 0 40px;
   }
+  #logo {
+    height: 40px;
+    background-size: auto 40px;
+  }
 }
 @media screen and (max-width: 320px) {
   #calypso header {
     margin: 0 30px;
     // min-height: calc(100vh - 60px);
+  }
+  #logo {
+    top: 45px;
   }
 }
 @media (max-height: 590px) and (orientation: landscape) {
