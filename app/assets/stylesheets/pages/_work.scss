@@ -1,5 +1,6 @@
 #work {
   padding: 200px 0;
+  background: #F7F7F7;
 }
 
 #work-calypso {
@@ -43,6 +44,46 @@
     color: #262626;
   }
 }
+
+
+@media screen and (max-width: 1280px) {
+   #work-calypso img {
+    width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+   #work-calypso img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #work-calypso img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #work-calypso img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #work-calypso img {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #work-calypso img {
+    width: 60%;
+  }
+}
+
+
 
 // #calypso header {
 //   min-height: calc(100vh - 185px);
