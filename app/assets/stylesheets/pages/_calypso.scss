@@ -1,0 +1,225 @@
+.calypso__hero {
+  background-image: image-url('water.jpg');
+  height: 46.3vw;
+  background-size: cover;
+  background-position: center left;
+  position: relative;
+}
+
+.calypso-smartphone img {
+  position: relative;
+  display: block;
+  width: 20%;
+  margin: -30vw auto 4vw;
+  filter: drop-shadow(0px 7px 3px #999);
+}
+
+.calypso-colors-typo {
+  max-width: 1065px;
+  margin: auto;
+}
+
+#calypso p {
+  font-size: 44px;
+  line-height: 80px;
+  text-indent: 1.5em;
+}
+
+
+#calypso .colors-element img {
+  max-width: 500px;
+}
+
+#calypso .colors-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#calypso .font-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10vw;
+}
+
+#calypso .font-element img {
+  max-width: 250px;
+}
+
+.u-margin-left {
+  margin-left: -7vw;
+}
+
+.u-margin-top {
+  margin-top: 6vw;
+}
+
+.logo {
+  text-align: center;
+  margin: 150px 0 80px;
+  img {
+  text-align: center;
+  max-width: 400px;
+  width: 45%;
+  margin-bottom: 30px;
+  }
+}
+
+#calypso .u-margin {
+  margin: 100px 0;
+}
+
+.center-content {
+  text-align: center;
+}
+
+section {
+  width: auto;
+  padding: 120px 0 120px;
+  overflow: visible;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.block-text {
+  width: 1065px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-image {
+  width: 100%;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.inner-shadow {
+  box-shadow: inset 0 30px 30px -30px rgba(0,0,0,0.2), inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+}
+
+
+#calypso #surfers {
+  position: relative;
+  background-image: image-url('surfers.jpeg');
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#calypso #surfers::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 66.5%;
+}
+
+
+// #logo {
+//   display: block;
+//   width: 156px;
+//   height: 58px;
+//   position: absolute;
+//   left: 50vw;
+//   top: 110px;
+//   margin-left: -78px;
+//   background: image-url('logo3.jpg') no-repeat center center;
+//   background-size: 156px auto;
+//   cursor: pointer;
+//   z-index: 5;
+// }
+
+// #logo:link {
+//   color: transparent;
+//   text-decoration: none;
+// }
+
+
+@media screen and (max-width: 1280px) {
+   .calypso-smartphone img {
+    width: 25%;
+  }
+  #calypso .colors-element img {
+    max-width: 350px;
+  }
+  #calypso .font-element img {
+    max-width: 220px;
+}
+}
+
+
+@media screen and (max-width: 1024px) {
+  .block-text {
+    width: auto;
+    margin: 0 120px;
+  }
+   .calypso-smartphone img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .calypso-smartphone img {
+    width: 35%;
+  }
+  #calypso .font-element {
+    flex-direction: column;
+  }
+  #calypso .font-element img {
+    margin: 30px 0;
+  }
+  #calypso .colors-element {
+    flex-direction: column;
+  }
+  #calypso .colors-element img {
+    margin: 30px 0;
+    width: 80%;
+  }
+  .logo {
+  margin: 150px 0 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-text {
+    width: auto;
+    margin: 0 60px;
+    box-sizing: border-box;
+  }
+  .calypso-smartphone img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .calypso-smartphone img {
+    width: 45%;
+  }
+  .block-text {
+    margin: 0 40px;
+  }
+  .logo {
+  margin: 150px 0 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .calypso-smartphone img {
+    width: 50%;
+  }
+}
+
+
+@media (max-height: 590px) and (orientation: landscape) {
+  .work header>.container {
+    margin: 150px auto 40px;
+    position: static;
+  }
+}
+
+
+
+

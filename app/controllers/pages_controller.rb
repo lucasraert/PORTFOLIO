@@ -2,10 +2,13 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def services
   end
 
   def work
+  end
+
+  def calypso
   end
 
   def contact

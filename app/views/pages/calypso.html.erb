@@ -1,0 +1,70 @@
+<div id="calypso" class="work">
+  <div class="calypso__hero">
+  </div>
+  <div class="calypso-smartphone">
+    <%= image_tag "iphonemockup.png", id:'calypso-phone' %>
+  </div>
+
+  <div class="logo">
+    <%= image_tag "calypsologo.png"%>
+  </div>
+
+  <section class="block-text intro">
+   <h2>Calypso brings surf enthusiasts together in hundreds of cities to do more of what they love by finding and create city-to-spot car journeys based on their location. This project targets surf enthusiasts of all level living landlocked. From the very beginner to the veteran surfer.</h2>
+ </section>
+
+ <div class="calypso-colors-typo">
+ <h1 class="center-content u-margin-top">Color / Typography</h1>
+ <div class="colors" style="margin-top: 10vw;">
+  <div class="colors-element">
+    <%= image_tag "colors.png", class:"work-element__image u-margin-left" %>
+    <%= image_tag "colorpalette.png", class:"work-element__image" %>
+  </div>
+  <div class="font-element u-margin-top">
+  <%= image_tag "gothambold.png" %>
+  <%= image_tag "latoregular.png" %>
+  <%= image_tag "latobold.png" %>
+  </div>
+</div>
+</div>
+<!--    <section id="iphone" class="block-image nopadding">
+</section> -->
+<section id="surfers" class="block-image nopadding inner-shadow">
+</section>
+<section class="block-text">
+  <h3>This project was an opportonutiy to give me more experience developping Ruby on Rails applications.</h3>
+</section>
+</div>
+
+<% content_for(:after_js) do %>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.menu').hide();
+    $('#calypso').hide().show( "drop", { direction: "down"}, 800 );
+    $('#calypso-phone').hide().show( "drop", { direction: "down"}, 1200 );
+    $(".navbar a").css({color: '#FFF'});
+    $(".ui-menu__line").css({background: '#FFF'});
+    $(".ui-menu").click(function() {
+      $(".ui-menu__line").toggleClass('background-black');
+    });
+    var scroll_pos = 0;
+    $(document).scroll(function() {
+      scroll_pos = $(this).scrollTop();
+      if(scroll_pos < 200) {
+        $(".ui-menu__line").css({background: '#FFF'});
+      } else {
+        $(".ui-menu__line").css({background: '#000'});
+      }
+    });
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#calypso').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

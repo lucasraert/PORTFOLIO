@@ -1,41 +1,21 @@
-<a href="/" id="logo">
-  Lucas Raert
-</a>
-<div id="calypso" class="work">
-  <header>
-    <div class="container">
+<div id="work">
+    <div class="block-text center-content u-margin" id="work-calypso">
+      <%= image_tag "iphonemockup.png", id:"work-phone"%>
       <h1>Calypso</h1>
-      <h3>Turn everyone into surf travel agents.</h3>
-  <!-- <div class="button-container">
-    <a href="https://www.calypso.surf" target="_blank">
-      <div class="button flex">
-        <p>VISIT WEBSITE</p>
+      <h3>Turn everyone into surf travel agents</h3>
+      <div class="button-container">
+        <a href="/calypso" class="button">
+            Case study
+        </a>
       </div>
-    </a>
-  </div> -->
     </div>
-  </header>
-  <section class="block-image" id="desktop">
-  </section>
-  <section class="block-text">
-    <h3>Calypso brings surf enthusiasts together in hundreds of cities to do more of what they love by finding and create city-to-spot car journeys based on their location.</h3>
-  </section>
-   <section id="iphone" class="block-image nopadding">
-  </section>
-  <section id="style" class="block-image nopadding">
-  </section>
-  <section id="surfers" class="block-image nopadding inner-shadow">
-  </section>
-  <section class="block-text">
-    <h3>This project was an opportonutiy to give me more experience developping Ruby on Rails applications.</h3>
-  </section>
 </div>
 
 <% content_for(:after_js) do %>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.menu').hide();
-    $('header').hide().show( "drop", { direction: "down"}, 400 );
+     $('#work-phone').hide().show( "drop", { direction: "down"}, 400 );
     $('.mockup').hide().show( "drop", { direction: "down"}, 500 );
   });
 

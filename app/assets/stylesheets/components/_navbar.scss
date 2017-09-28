@@ -2,6 +2,11 @@
 .navbar {
   transition: all 0.3s ease;
   max-height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
 }
 
 .navbar-links {
@@ -46,6 +51,10 @@
   height: 4px;
   background: #000;
   transform: translateY(0) translateZ(0);
+}
+
+.background-black {
+  background: #000 !important;
 }
 
 .ui-menu__line_1 {

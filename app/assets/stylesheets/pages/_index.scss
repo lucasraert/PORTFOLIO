@@ -3,6 +3,7 @@
 @import "about";
 @import "work";
 @import "contact";
+@import "calypso";
 
 /* Some CSS Setup - nothing to do with flexbox */
 html {
@@ -26,6 +27,13 @@ h1 {
   line-height: 90px;
   letter-spacing: 0;
 }
+
+h2 {
+  font-size: 44px;
+  line-height: 80px;
+  text-indent: 1.5em;
+}
+
 h3 {
   font-size: 28px;
   line-height: 50px;
@@ -77,8 +85,15 @@ ol, ul {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  body h2 {
+    font-size: 33px;
+    line-height: 70px;
+  }
+}
+
 @media screen and (max-width: 960px) {
- body h1 {
+  body h1 {
     font-size: 28px;
     line-height: 50px;
   }
@@ -92,9 +107,20 @@ ol, ul {
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   body h3 p {
     font-size: 14px;
     line-height: 20px;
+  }
+  body h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 560) {
+  body h2 {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
