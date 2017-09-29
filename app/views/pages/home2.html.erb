@@ -1,0 +1,40 @@
+<div id="home">
+  <div class="container">
+    <%#= image_tag "logo3.jpg" %>
+    <h1>Hello, I am Lucas Raert -<br>
+    A product designer based in Paris.</h1>
+  </div>
+</div>
+
+
+<div id="work">
+    <div class="block-text center-content u-margin" id="work-calypso">
+      <%= image_tag "iphonemockup.png", id:"work-phone"%>
+      <h1>Calypso</h1>
+      <h3>Turn everyone into surf travel agents</h3>
+      <div class="button-container">
+        <a href="/calypso" class="button">
+            Case study
+        </a>
+      </div>
+    </div>
+</div>
+
+
+<% content_for(:after_js) do %>
+<script>
+  $(document).ready(function() {
+    $('.menu').hide();
+    $('#home').hide().show( "fade", 400 );
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#home').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

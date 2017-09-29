@@ -26,14 +26,14 @@
 
 .ui-menu {
   position: fixed;
-  top: 0px;
-  right: 5px;
+  top: 19px;
+  right: 15px;
   padding: 30px;
   cursor: pointer;
   z-index: 20;
   transition: opacity .35s;
   transform: translateZ(0);
-  display: none;
+  display: block;
 }
 
 .ui-menu__content {
@@ -78,6 +78,7 @@
 }
 
 .menu {
+  display: none;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -147,17 +148,18 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu {
-    display:none;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .menu {
+//     display:none;
+//   }
+// }
 
-@media screen and (max-width: 990px) {
-  .ui-menu {
-    display: block !important;
-  }
-  .navbar {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 990px) {
+//   .ui-menu {
+//     display: block !important;
+//   }
+//   .navbar {
+//     display: none !important;
+//   }
+
+// }
