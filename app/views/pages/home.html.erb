@@ -1,42 +1,26 @@
-
-<div class="chat">
-  <div>
-  <div class="message" id="message-1">
-    Bonjour 👋
-  </div>
-  </div>
-  <div>
-  <div class="message" id="message-2">
-    I'm Lucas
-  </div>
-  </div>
-  <div>
-  <div class="message" id="message-3">
-      I'm a product designer based in Paris 🇫🇷
-  </div>
-  </div>
-  <div>
-   <div class="message" id="message-4">
-      I conceive, design and build things on the web
-  </div>
-  <div class="message" id="message-5">
-      Feel free to check out my <a href="/work">work</a>
-  </div>
-
-
-  <div class="writing-container">
-    <div class='writing' id="writer">
-      <div class='dot left'></div>
-      <div class='dot center'></div>
-      <div class='dot right'></div>
-    </div>
-   <div class="message" id="message-6">
-      Peace ✌️
-    </div>
+<div id="home">
+  <div class="container">
+    <%#= image_tag "logo3.jpg" %>
+    <h1>Hello, I am Lucas Raert -<br>
+    A product designer based in Paris.</h1>
   </div>
 </div>
 
-<% content_for(:after_js) do %>
-<script src="javacripts/home.js"></script>
-<% end %>
 
+<% content_for(:after_js) do %>
+<script>
+  $(document).ready(function() {
+    $('.menu').hide();
+    $('#home').hide().show( "fade", 400 );
+  });
+
+  function openNav() {
+    $('.menu').toggle( "drop", { direction: "right"}, 250 );
+    $('#home').toggleClass('opacity-low');
+    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
+    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
+    $('.ui-menu__line_2').toggle();
+    $("body").toggleClass('no-scroll');
+  };
+</script>
+<% end %>

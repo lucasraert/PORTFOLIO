@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $('.menu').hide();
-  $('#home').hide().show( "fade", 400 );
 });
 
 

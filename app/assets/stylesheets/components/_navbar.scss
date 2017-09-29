@@ -33,7 +33,7 @@
   z-index: 20;
   transition: opacity .35s;
   transform: translateZ(0);
-  display: block;
+  display: none;
 }
 
 .ui-menu__content {
@@ -155,12 +155,12 @@
 //   }
 // }
 
-// @media screen and (max-width: 990px) {
-//   .ui-menu {
-//     display: block !important;
-//   }
-//   .navbar {
-//     display: none !important;
-//   }
+@media screen and (max-width: 990px) {
+  .ui-menu {
+    display: block !important;
+  }
+  .navbar {
+    display: none !important;
+  }
 
-// }
+}
