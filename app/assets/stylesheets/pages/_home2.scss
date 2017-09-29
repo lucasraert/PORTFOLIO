@@ -2,12 +2,12 @@
 /* messages */
 .chat {
   max-width: 500px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 10%);
   margin: auto;
-  padding: 15px;
-  margin-top: 150px;
+  padding: 20px;
+  margin-top: 15%;
   z-index: 30;
-  transition: all 1s;
+
 }
 .message {
   display: none;

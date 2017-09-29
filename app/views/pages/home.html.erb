@@ -1,24 +1,3 @@
-<!-- <div class="cool">
-  <div class="message" id="message-1">
-    Hi, I'm an iMessage
-  </div>
-  <div class="message" id="message-2">
-      I could be on your home page nicely animating it 👯
-  </div>
-  <div class="message" id="message-3">
-     See an example <a href="https://adesurirey.github.io/en" target="blank">here</a>
-  </div>
-  <div class="writing-container">
-    <div class='writing' id="writer">
-      <div class='dot left'></div>
-      <div class='dot center'></div>
-      <div class='dot right'></div>
-    </div>
-    <div class="message" id="message-4">
-      <a href="" id="replay">replay me</a>
-    </div>
-  </div>
-</div> -->
 
 <div class="chat">
   <div>
@@ -26,12 +5,17 @@
     Bonjour 👋
   </div>
   </div>
+  <div>
   <div class="message" id="message-2">
     I'm Lucas
   </div>
+  </div>
+  <div>
   <div class="message" id="message-3">
       I'm a product designer based in Paris 🇫🇷
   </div>
+  </div>
+  <div>
    <div class="message" id="message-4">
       I conceive, design and build things on the web
   </div>
@@ -59,6 +43,7 @@
     $('#home').hide().show( "fade", 400 );
   });
 
+
   function openNav() {
     $('.menu').toggle( "drop", { direction: "right"}, 250 );
     $('.cool').toggleClass('opacity-low');
@@ -67,13 +52,6 @@
     $('.ui-menu__line_2').toggle();
     $("body").toggleClass('no-scroll');
   };
-
-function doBounce(element, times, distance, speed) {
-  for(var i = 0; i < times; i++) {
-      element.animate({marginTop: '-='+distance}, speed)
-             .animate({marginTop: '+='+distance}, speed);
-  }
-}
 
 function showMessage(id) {
   var message = $('#message-' + id);
@@ -99,3 +77,4 @@ $(document).ready(function() {
 
 </script>
 <% end %>
+
