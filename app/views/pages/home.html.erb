@@ -8,5 +8,12 @@
 
 
 <% content_for(:after_js) do %>
-<script src="home.js"></script>
+<script src="navbar.js"></script>
+<script type="text/javascript">
+  $(window).on("load", function(){
+  // Handler when all assets (including images) are loaded
+  const headerHome = document.getElementById('home');
+  headerHome.classList.add('active');
+});
+</script>
 <% end %>

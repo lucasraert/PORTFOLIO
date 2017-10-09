@@ -42,19 +42,25 @@
 
 <% content_for(:after_js) do %>
 <script type="text/javascript">
+
+  $(window).on("load", function(){
+
+    const phone = document.getElementById('calypso-phone');
+    const background = document.querySelector('.calypso__hero');
+    phone.classList.add('active');
+    background.classList.add('zoom');
+  });
+
   $(document).ready(function() {
-    $('.menu').hide();
-    $('#calypso').hide().show( "drop", { direction: "down"}, 800 );
-    $('#calypso-phone').hide().show( "drop", { direction: "down"}, 1200 );
     $(".navbar a").css({color: '#FFF'});
     $(".ui-menu__line").css({background: '#FFF'});
     $(".ui-menu").click(function() {
-      $(".ui-menu__line").toggleClass('background-black');
+    $(".ui-menu__line").toggleClass('background-black');
     });
     var scroll_pos = 0;
     $(document).scroll(function() {
       scroll_pos = $(this).scrollTop();
-      if(scroll_pos < 200) {
+      if(scroll_pos < $(".calypso__hero").innerHeight()) {
         $(".ui-menu__line").css({background: '#FFF'});
       } else {
         $(".ui-menu__line").css({background: '#000'});

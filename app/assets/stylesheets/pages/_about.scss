@@ -30,6 +30,12 @@
   padding-top: 50px;
 }
 
+#aboutme, #services, #keyskills {
+  opacity: 0;
+  transform:translateY(20%);
+
+}
+
 #about .skills {
   display: flex;
   flex-wrap: wrap;

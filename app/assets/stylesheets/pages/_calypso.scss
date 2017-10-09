@@ -6,6 +6,16 @@
   position: relative;
 }
 
+.zoom {
+  transform: scale(1.2);
+  transition: 20s;
+}
+
+#calypso-phone {
+  opacity: 0;
+  transform:translateY(20%) scale(0.95);
+}
+
 .calypso-smartphone img {
   position: relative;
   display: block;

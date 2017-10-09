@@ -20,5 +20,15 @@
 
 
 <% content_for(:after_js) do %>
-<script src="contact.js"></script>
+<script src="navbar.js"></script>
+
+<script type="text/javascript">
+  $(window).on("load", function(){
+  // Handler when all assets (including images) are loaded
+  const container = document.querySelector('.container');
+  const socialContainer = document.querySelector('.social-container');
+  container.classList.add('active');
+  socialContainer.classList.add('active');
+});
+</script>
 <% end %>

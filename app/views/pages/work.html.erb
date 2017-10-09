@@ -12,5 +12,13 @@
 </div>
 
 <% content_for(:after_js) do %>
-<script src="work.js"></script>
+<script src="navbar.js"></script>
+<script type="text/javascript">
+  $(window).on("load", function(){
+  // Handler when all assets (including images) are loaded
+  const iphone = document.getElementById('work-phone');
+  iphone.classList.add('active');
+});
+
+</script>
 <% end %>

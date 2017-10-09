@@ -19,11 +19,15 @@
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+  opacity: 0;
+  transform:translateY(20%);
 }
 
 #contact header .social-container {
   width: 500px;
   padding-bottom: 150px;
+  opacity: 0;
+  transform:translateY(40%);
 }
 
 #contact header {
