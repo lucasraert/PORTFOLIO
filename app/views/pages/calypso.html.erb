@@ -1,6 +1,5 @@
 <div id="calypso" class="work">
-  <div class="calypso__hero">
-  </div>
+  <div class="calypso__hero"></div>
   <div class="calypso-smartphone">
     <%= image_tag "iphonemockup.png", id:'calypso-phone' %>
   </div>
@@ -42,13 +41,9 @@
 
 <% content_for(:after_js) do %>
 <script type="text/javascript">
-
   $(window).on("load", function(){
-
     const phone = document.getElementById('calypso-phone');
-    const background = document.querySelector('.calypso__hero');
     phone.classList.add('active');
-    background.classList.add('zoom');
   });
 
   $(document).ready(function() {
