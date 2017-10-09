@@ -145,7 +145,6 @@
 
 @media screen and (max-width: 768px) {
   .menu {
-    display: block;
     width: 100% !important;
     height: 100%;
     position: fixed;
@@ -160,11 +159,6 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .menu {
-//     display:none;
-//   }
-// }
 
 @media screen and (max-width: 990px) {
   .ui-menu {
