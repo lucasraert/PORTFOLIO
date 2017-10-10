@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'services', to: 'pages#services'
+  get 'hire', to: 'pages#hire'
   get 'work', to: 'pages#work'
   get 'calypso', to: 'pages#calypso'
   get 'contact', to: 'pages#contact'

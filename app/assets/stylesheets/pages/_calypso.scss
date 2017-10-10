@@ -11,10 +11,12 @@
   transition: 10s;
 }
 
-#calypso-phone {
+#calypso-header {
   opacity: 0;
-  transform:translateY(20%) scale(0.95);
+  transform:translateY(20%);
+  transition: transform 2s;
 }
+
 
 .calypso-smartphone img {
   position: relative;

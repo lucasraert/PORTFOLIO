@@ -1,17 +1,42 @@
 // Specific CSS for your home-page
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 72px;
+  z-index: 30;
+  height: 200px;
+}
+
+#logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+.hire-link {
+  display: block;
+  color: #ff3829;
+  border-bottom: 1px solid #ff3829;
+  padding-bottom: 4px;
+  &:hover {
+    color: #ff3829;
+  }
+}
+
 #home {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(90vh - 200px);
   opacity: 0;
   transition: opacity .35s;
 }
+
 
 #home>.container {
   width: 100%;
   padding: 120px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 100px;
   box-sizing: border-box;
 }
 
@@ -33,12 +58,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  #home {
+    min-height: calc(90vh - 100px);
+  }
   #home>.container {
     padding: 40px 60px 60px;
   }
   #home>.container img {
     width: 140px;
     height: auto;
+  }
+  nav {
+    padding: 24px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 560px) {

@@ -1,11 +1,22 @@
+<%= link_to root_path do %>
+<div class="ui-menu" id="menu" onclick="openNav()">
+  <span class="ui-menu__content">
+    <i class="ui-menu__line ui-menu__line_1"></i>
+<!--     <i class="ui-menu__line ui-menu__line_2"></i> -->
+    <i class="ui-menu__line ui-menu__line_3"></i>
+  </span>
+</div>
+<% end %>
 <div id="calypso" class="work">
   <div class="calypso__hero"></div>
+  <div id='calypso-header'>
   <div class="calypso-smartphone">
     <%= image_tag "iphonemockup.png", id:'calypso-phone' %>
   </div>
 
   <div class="logo">
     <%= image_tag "calypsologo.png"%>
+  </div>
   </div>
 
   <section class="block-text intro">
@@ -42,8 +53,10 @@
 <% content_for(:after_js) do %>
 <script type="text/javascript">
   $(window).on("load", function(){
-    const phone = document.getElementById('calypso-phone');
+    const phone = document.getElementById('calypso-header');
+    const background = document.querySelector('.calypso__hero');
     phone.classList.add('active');
+    background.classList.add('active');
   });
 
   $(document).ready(function() {
