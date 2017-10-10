@@ -28,6 +28,12 @@
       <li><div class="icon">🕹</div><p>Creative Direction</p></li>
     </ul>
   </section>
+
+   <div class="button-container" id="btn-hire">
+      <a href="mailto:lucasraert@gmail.com" class="button">
+          Hire me
+      </a>
+    </div>
 </div>
 
 <% content_for(:after_js) do %>
@@ -39,10 +45,12 @@
     const about = document.getElementById('aboutme');
     const services = document.getElementById('services');
     const keySkills = document.getElementById('keyskills');
+    const btnHire = document.getElementById('btn-hire');
     about.classList.add('active');
     services.classList.add('active');
     keySkills.classList.add('active');
     menu.classList.add('active');
+    btnHire.classList.add('active');
   });
 </script>
 <% end %>
