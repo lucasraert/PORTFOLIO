@@ -55,8 +55,10 @@
   $(window).on("load", function(){
     const phone = document.getElementById('calypso-header');
     const background = document.querySelector('.calypso__hero');
+    const menu = document.getElementById('menu');
     phone.classList.add('active');
     background.classList.add('active');
+    menu.classList.add('active');
   });
 
   $(document).ready(function() {
@@ -76,13 +78,5 @@
     });
   });
 
-  function openNav() {
-    $('.menu').toggle( "drop", { direction: "right"}, 250 );
-    $('#calypso').toggleClass('opacity-low');
-    $('.ui-menu__line_1').toggleClass('ui-menu__line_1_opened');
-    $('.ui-menu__line_3').toggleClass('ui-menu__line_3_opened');
-    $('.ui-menu__line_2').toggle();
-    $("body").toggleClass('no-scroll');
-  };
 </script>
 <% end %>

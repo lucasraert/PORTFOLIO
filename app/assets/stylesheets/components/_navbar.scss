@@ -26,7 +26,10 @@
 
 
 
-
+#menu {
+  opacity: 0;
+  transform:translateY(-20%);
+}
 
 .ui-menu {
   display: block !important;
