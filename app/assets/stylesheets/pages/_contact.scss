@@ -19,8 +19,6 @@
   align-items: center;
   justify-content: center;
   padding-top: 100px;
-  // opacity: 0;
-  // transform:translateY(20%);
 }
 
 #contact header .social-container {
@@ -42,7 +40,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 
 #contact .social img {
@@ -114,8 +111,10 @@
       max-width: 420px;
     }
   }
+  #contact .container h3>a {
+  padding-bottom: 3px;
+  }
 }
-
 
 @media (max-height: 590px) and (orientation: landscape) {
   #contact header {
