@@ -29,6 +29,23 @@ nav {
   }
 }
 
+.hire-link-mb {
+  display: none;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.hire-link-mb__content {
+  color: #ff3829;
+  border-bottom: 1px solid #ff3829;
+  padding-bottom: 4px;
+  text-decoration:none;
+  &:hover {
+    color: #ff3829;
+    text-decoration:none;
+  }
+}
+
 .active {
   opacity: 1 !important;
   transition:all 0.6s;
@@ -95,6 +112,12 @@ nav {
     width: 140px;
     height: auto;
     margin: auto;
+  }
+  .hire-link-mb {
+    display: block;
+  }
+  .hire-link {
+    display: none;
   }
 }
 
