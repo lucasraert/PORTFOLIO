@@ -9,11 +9,9 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   min-width: 100%;
   min-height: 100%;
@@ -21,19 +19,16 @@ body {
   color: #262626;
   background: rgb(255,255,255);
 }
-
 h1 {
   font-size: 56px;
   line-height: 90px;
   letter-spacing: 0;
 }
-
 h2 {
   font-size: 44px;
   line-height: 80px;
   text-indent: 1.5em;
 }
-
 h3 {
   font-size: 28px;
   line-height: 50px;
@@ -42,7 +37,6 @@ p {
   font-size: 22px;
   line-height: 40px;
 }
-
 a {
   text-decoration: none;
   color: #262626;
@@ -51,13 +45,11 @@ a {
     color: #262626;
   }
 }
-
 ol, ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 @media screen and (max-width: 1455px) {
  body h1 {
    font-size: 44px;
@@ -68,7 +60,6 @@ ol, ul {
     line-height: 40px;
   }
 }
-
 @media screen and (max-width: 1200px) {
   body h1 {
     font-size: 36px;
@@ -83,14 +74,12 @@ ol, ul {
     line-height: 30px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   body h2 {
     font-size: 33px;
     line-height: 70px;
   }
 }
-
 @media screen and (max-width: 960px) {
   body h1 {
     font-size: 28px;
@@ -105,7 +94,6 @@ ol, ul {
     line-height: 25px;
   }
 }
-
 @media screen and (max-width: 768px) {
   body h3 p {
     font-size: 14px;
@@ -116,7 +104,6 @@ ol, ul {
     line-height: 35px;
   }
 }
-
 @media screen and (max-width: 560) {
   body h2 {
     font-size: 18px;
