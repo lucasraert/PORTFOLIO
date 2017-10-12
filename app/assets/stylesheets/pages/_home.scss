@@ -6,17 +6,14 @@ nav {
   padding: 50px 80px;
   height: 180px;
 }
-
 #homenav {
   opacity: 0;
   transform:translateY(-20%);
 }
-
 #logo {
   width: 30px;
   cursor: pointer;
 }
-
 .hire-link {
   display: block;
   color: #ff3829;
@@ -29,13 +26,11 @@ nav {
     border-bottom: 2px solid #ff3829;
   }
 }
-
 .hire-link-mb {
   display: none;
   width: 100%;
   padding-top: 50px;
 }
-
 .hire-link-mb__content {
   color: #ff3829;
   border-bottom: 1px solid #ff3829;
@@ -46,13 +41,11 @@ nav {
     text-decoration:none;
   }
 }
-
 .active {
   opacity: 1 !important;
   transition:all 0.6s;
   transform:translateY(0%) scale(1) !important;
 }
-
 #home {
   width: 100%;
   min-height: calc(90vh - 180px);
@@ -60,7 +53,6 @@ nav {
   transition: opacity .35s;
   transition-delay: .5s;
 }
-
 #home>.container {
   width: 100%;
   padding: 120px;
@@ -69,12 +61,10 @@ nav {
   bottom: 100px;
   box-sizing: border-box;
 }
-
 #home>.container h1 {
   position: relative;
   top: 21px;
 }
-
 @media screen and (max-width: 1280px) {
   #home>.container {
     padding: 60px;
@@ -84,7 +74,6 @@ nav {
     height: auto;
   }
 }
-
 @media screen and (max-width: 768px) {
   #home {
     min-height: calc(90vh - 100px);
@@ -121,7 +110,6 @@ nav {
     display: none;
   }
 }
-
 @media screen and (max-width: 320px) {
   #home>.container {
     padding: 30px 30px 90px;
@@ -131,7 +119,6 @@ nav {
     height: auto;
   }
 }
-
 @media (max-height: 560px) and (orientation: landscape) {
   #home .container {
     padding: 135px 40px 30px;
@@ -141,6 +128,3 @@ nav {
     height: auto;
   }
 }
-
-
-
