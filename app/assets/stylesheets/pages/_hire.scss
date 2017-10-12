@@ -1,41 +1,32 @@
 #about .block-text h1 {
   text-align: center;
 }
-
 #about section:first-child {
   padding: 150px 0 80px 0;
 }
-
 #about section p {
   margin: 40px 120px 0 120px;
 }
-
 #about section {
   padding: 80px 0;
 }
-
 #about section:last-child {
   padding: 100px 0 200px;
 }
-
 #about .skills> li p {
   text-align: center;
   padding: 0 40px;
   margin: 0 !important;
 }
-
 #about .icon {
   font-size: 80px;
   text-align: center;
   padding-top: 50px;
 }
-
 #aboutme, #services, #keyskills, #btn-hire {
   opacity: 0;
   transform:translateY(20%);
-
 }
-
 #about .skills {
   display: flex;
   flex-wrap: wrap;
@@ -43,11 +34,9 @@
   align-items: center;
   margin: 0px 120px 0 120px;
 }
-
 #about .button-container {
   margin: 80px 0 200px 0 !important;
 }
-
 @media screen and (max-width: 1280px) {
   #about .skills {
     display: flex;
@@ -56,7 +45,6 @@
     align-items: center;
   }
 }
-
 @media screen and (max-width: 1024px) {
   #about section {
     padding: 80px 0;
