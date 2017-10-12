@@ -65,6 +65,11 @@ nav {
   position: relative;
   top: 21px;
 }
+@media screen and (max-width: 1400px) {
+  #home>.container {
+    padding: 6vh 150px;
+  }
+}
 @media screen and (max-width: 1280px) {
   #home>.container {
     padding: 60px;
