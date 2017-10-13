@@ -89,6 +89,9 @@
     justify-content: center;
     align-items: center;
   }
+  #keyskills ul li{
+    flex-basis: auto;
+  }
 }
 @media screen and (max-width: 320px) {
   #about section {
