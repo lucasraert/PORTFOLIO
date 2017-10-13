@@ -15,13 +15,21 @@
 }
 #about .skills> li p {
   text-align: center;
-  padding: 0 40px;
   margin: 0 !important;
 }
 #about .icon {
-  font-size: 80px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
+}
+#about .icon img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+#keyskills ul li{
+  flex-basis: 33%;
 }
 #aboutme, #services, #keyskills, #btn-hire {
   opacity: 0;
