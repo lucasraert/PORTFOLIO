@@ -67,7 +67,11 @@
 }
 @media screen and (max-width: 560px) {
   #contact header {
-    h1, h3 {
+    h1 {
+      max-width: 260px;
+      line-height: 50px;
+    }
+    h3 {
       max-width: 260px;
       line-height: 25px;
     }
