@@ -32,4 +32,11 @@
     </a>
   </div>
 </div>
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeIn = document.querySelectorAll('.fade-in');
+  fadeIn.forEach((x) => {
+    x.classList.add('active');
+  });
+});
+</script>

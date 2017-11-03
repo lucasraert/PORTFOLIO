@@ -47,6 +47,14 @@
   </section>
 </div>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeIn = document.querySelectorAll('.fade-in');
+  fadeIn.forEach((x) => {
+    x.classList.add('active');
+  });
+});
+</script>
 <%= javascript_tag do %>
   const hero = document.querySelector('.calypso__hero');
   const uiMenuLines = document.querySelectorAll('.ui-menu__line');
