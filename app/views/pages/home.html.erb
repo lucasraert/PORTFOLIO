@@ -1,4 +1,4 @@
-<div id="homenav">
+<div id="homenav" class='fade-in'>
   <nav>
     <%= link_to root_path do %>
     <%= image_tag "logo.png", id:"logo"%>
@@ -6,7 +6,7 @@
     <a href="/hire" class="hire-link">HIRE ME</a>
   </nav>
 </div>
-<div id="home">
+<div id="home" class='fade-in'>
   <div class="container">
     <h1>Hello, I am Lucas Raert -<br>
     A product designer based in Paris</h1>
@@ -15,7 +15,7 @@
     </div>
   </div>
 </div>
-<div id="work">
+<div id="work" class='fade-in'>
   <div class="block-text center-content u-margin" id="work-calypso">
     <%= image_tag "workcalypso.png", id:"work-phone"%>
     <h1>Calypso</h1>
@@ -43,15 +43,3 @@
   </div>
 </header>
 </div>
-<% content_for(:after_js) do %>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const home = document.getElementById('home');
-    const work = document.getElementById('work');
-    const homenav = document.getElementById('homenav');
-    home.classList.add('active');
-    work.classList.add('active');
-    homenav.classList.add('active');
-  });
-</script>
-<% end %>

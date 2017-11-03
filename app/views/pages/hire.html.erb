@@ -1,5 +1,5 @@
 <%= link_to root_path do %>
-<div class="ui-menu" id="menu" onclick="openNav()">
+<div class="ui-menu fade-in" id="menu" onclick="openNav()">
   <span class="ui-menu__content">
     <i class="ui-menu__line ui-menu__line_1"></i>
     <i class="ui-menu__line ui-menu__line_3"></i>
@@ -7,15 +7,15 @@
 </div>
 <% end %>
 <div id="about">
-  <section class="block-text" id="aboutme">
+  <section class="block-text fade-in" id="aboutme">
     <h1>About me</h1>
     <p class='u-margin-top-text'>I’m a product designer specializing in web based projects. I help my clients to create successful digital services through creative and engaging experiences. As a self-taught designer with a business background, I always make sure to produce work that generate rich business outcomes.</p>
   </section>
-  <section class="block-text" id="services">
+  <section class="block-text fade-in" id="services">
     <h1>What I can do for you</h1>
     <p class='u-margin-top-text'>Need a new website? Need to create a better workflow for your app? Need branding and identity? Or just want to discuss and get some advice? These are some of the ways I can help.</p>
   </section>
-  <section class="block-text" id="keyskills">
+  <section class="block-text fade-in" id="keyskills">
     <h1>Key skills</h1>
     <ul class="skills">
       <li><div class="icon"><%= image_tag "empathy.svg"%></div><p>Empathy</p></li>
@@ -26,26 +26,9 @@
       <li><div class="icon"><%= image_tag "agile.svg"%></div><p>Agile/Scrum</p></li>
     </ul>
   </section>
-  <div class="button-container" id="btn-hire">
+  <div class="button-container fade-in" id="btn-hire">
     <a href="mailto:lucasraert@gmail.com" class="button">
       Hire me
     </a>
   </div>
 </div>
-
-<script src="navbar.js"></script>
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", () => {
-    const menu = document.getElementById('menu');
-    const about = document.getElementById('aboutme');
-    const services = document.getElementById('services');
-    const keySkills = document.getElementById('keyskills');
-    const btnHire = document.getElementById('btn-hire');
-    about.classList.add('active');
-    services.classList.add('active');
-    keySkills.classList.add('active');
-    menu.classList.add('active');
-    btnHire.classList.add('active');
-  });
-</script>
-

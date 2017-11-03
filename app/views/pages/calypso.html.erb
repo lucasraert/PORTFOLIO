@@ -1,5 +1,5 @@
 <%= link_to root_path do %>
-<div class="ui-menu" id="menu" onclick="openNav()">
+<div class="ui-menu fade-in" id="menu" onclick="openNav()">
   <span class="ui-menu__content">
     <i class="ui-menu__line ui-menu__line_1"></i>
     <i class="ui-menu__line ui-menu__line_3"></i>
@@ -8,7 +8,7 @@
 <% end %>
 <div id="calypso" class="work">
   <div class="calypso__hero"></div>
-  <div id='calypso-header'>
+  <div id='calypso-header' class='fade-in'>
     <div class="calypso-smartphone">
       <%= image_tag "iphonemockup.png", id:'calypso-phone' %>
     </div>
@@ -46,12 +46,9 @@
     <h3>This project was an opportunity to give me more experience developping Ruby on Rails applications.</h3>
   </section>
 </div>
-<% content_for(:after_js) do %>
-<script type="text/javascript">
-  const menu = document.getElementById('menu');
+<%= javascript_tag do %>
   const hero = document.querySelector('.calypso__hero');
   const uiMenuLines = document.querySelectorAll('.ui-menu__line');
-  const phone = document.getElementById('calypso-header');
   function colorChange() {
     uiMenuLines.forEach((line) => {
       if (document.body.scrollTop > hero.offsetHeight || document.documentElement.scrollTop > hero.offsetHeight) {
@@ -62,12 +59,9 @@
     });
   };
   document.addEventListener("DOMContentLoaded", () => {
-    phone.classList.add('active');
-    menu.classList.add('active');
     uiMenuLines.forEach((line) => {
       line.style.background = '#FFF';
     })
   });
   window.onscroll = function() {colorChange()};
-</script>
 <% end %>
