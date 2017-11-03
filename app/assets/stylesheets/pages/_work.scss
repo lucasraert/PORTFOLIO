@@ -4,7 +4,6 @@
   background-size: cover;
   transform:translateY(20%) scale(0.95);
   transition-delay: .5s;
-
 }
 #work-calypso {
   img {
@@ -16,10 +15,10 @@
     margin-bottom: 100px;
   }
 }
-#work-phone {
-  opacity: 0;
-  transform:translateY(20%) scale(0.95);
-}
+// #work-phone {
+//   opacity: 0;
+//   transform:translateY(20%) scale(0.95);
+// }
 .button-container {
   text-align: center;
   display: block;

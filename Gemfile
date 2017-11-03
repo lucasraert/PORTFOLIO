@@ -12,11 +12,9 @@ gem 'redis'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
-gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'jquery-ui-rails'
 
 
 group :development, :test do
