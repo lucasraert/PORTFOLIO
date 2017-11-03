@@ -1,2 +1,2 @@
-//= fade_in
+//= require fade_in
 //= require_tree .
