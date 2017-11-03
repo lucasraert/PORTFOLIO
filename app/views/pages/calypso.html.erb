@@ -48,26 +48,26 @@
 </div>
 <% content_for(:after_js) do %>
 <script type="text/javascript">
-  $(window).on("load", function(){
-    const phone = document.getElementById('calypso-header');
-    const background = document.querySelector('.calypso__hero');
-    const menu = document.getElementById('menu');
+  const menu = document.getElementById('menu');
+  const hero = document.querySelector('.calypso__hero');
+  const uiMenuLines = document.querySelectorAll('.ui-menu__line');
+  const phone = document.getElementById('calypso-header');
+  function colorChange() {
+    uiMenuLines.forEach((line) => {
+      if (document.body.scrollTop > hero.offsetHeight || document.documentElement.scrollTop > hero.offsetHeight) {
+          line.style.background = '#000';
+      } else {
+          line.style.background = '#FFF';
+      };
+    });
+  };
+  document.addEventListener("DOMContentLoaded", () => {
     phone.classList.add('active');
-    background.classList.add('active');
     menu.classList.add('active');
+    uiMenuLines.forEach((line) => {
+      line.style.background = '#FFF';
+    })
   });
-  var scroll_pos = 0;
-  $(document).scroll(function() {
-    scroll_pos = $(this).scrollTop();
-    if(scroll_pos < $(".calypso__hero").innerHeight()) {
-      $(".ui-menu__line").css({background: '#FFF'});
-    } else {
-      $(".ui-menu__line").css({background: '#000'});
-    }
-  });
-  $(document).ready(function() {
-    $(".navbar a").css({color: '#FFF'});
-    $(".ui-menu__line").css({background: '#FFF'});
-  });
+  window.onscroll = function() {colorChange()};
 </script>
 <% end %>

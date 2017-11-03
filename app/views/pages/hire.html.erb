@@ -32,10 +32,10 @@
     </a>
   </div>
 </div>
-<% content_for(:after_js) do %>
+
 <script src="navbar.js"></script>
 <script type="text/javascript">
-  $(window).on("load", function(){
+  document.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById('menu');
     const about = document.getElementById('aboutme');
     const services = document.getElementById('services');
@@ -48,4 +48,4 @@
     btnHire.classList.add('active');
   });
 </script>
-<% end %>
+

@@ -1,31 +1,7 @@
 // /* Main navbar */
-// .navbar {
-//   display: none;
-//   transition: all 0.3s ease;
-//   max-height: 100px;
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   height: 100px;
-//   z-index: 1;
-// }
-
-// .navbar-links {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100px;
-// }
-
-// /* Basic navbar item */
-// .navbar-item {
-//   cursor: pointer;
-//   padding: 0 10px;
-//   margin: 0 10px;
-// }
-
 #menu {
   opacity: 0;
+  transition-delay: 0.3s;
   transform:translateY(-20%);
 }
 .ui-menu {
@@ -36,9 +12,9 @@
   padding: 30px;
   cursor: pointer;
   z-index: 20;
-  transition: opacity .35s;
-  transform: translateZ(0);
+  transform: translateY(-30%);
   display: none;
+  opacity: 0;
 }
 .ui-menu__content {
   position: relative;
@@ -60,18 +36,10 @@
 }
 .ui-menu__line_1 {
   top: 0;
-  transition: all .2s;
   transform: translateY(8px) rotate(-45deg);
-
-}
-.ui-menu__line_2 {
-  top: 8px;
-  transition: all .2s;
-  display: none;
 }
 .ui-menu__line_3 {
   top: 16px;
-  transition: all .2s;
   transform: translateY(-8px) rotate(45deg);
 }
 .opacity-low {
@@ -90,7 +58,6 @@
   background: #fff;
   transform-style: flat;
 }
-
 .no-scroll {
   overflow: hidden;
 }
@@ -155,13 +122,3 @@
     right: 0;
   }
 }
-
-// @media screen and (max-width: 990px) {
-//   .ui-menu {
-//     display: block !important;
-//   }
-//   .navbar {
-//     display: none !important;
-//   }
-
-// }
