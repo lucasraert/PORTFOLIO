@@ -33,10 +33,10 @@
   </div>
 </div>
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", () => {
-    const fadeIn = document.querySelectorAll('.fade-in');
-    fadeIn.forEach((x) => {
-      x.classList.add('active');
+  const fadeIn = document.querySelectorAll('.fade-in');
+  document.addEventListener("DOMContentLoaded", function() {
+    fadeIn.forEach(function(x)  {
+      return x.classList.add('active');
     });
   });
 </script>

@@ -46,31 +46,28 @@
     <h3>This project was an opportunity to give me more experience developping Ruby on Rails applications.</h3>
   </section>
 </div>
-<script type="text/javascript" src="index.js"></script>
 <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeIn = document.querySelectorAll('.fade-in');
-  fadeIn.forEach((x) => {
-    x.classList.add('active');
-  });
-});
-</script>
-<%= javascript_tag do %>
-  const hero = document.querySelector('.calypso__hero');
-  const uiMenuLines = document.querySelectorAll('.ui-menu__line');
-  function colorChange() {
-    uiMenuLines.forEach((line) => {
-      if (document.body.scrollTop > hero.offsetHeight || document.documentElement.scrollTop > hero.offsetHeight) {
-          line.style.background = '#000';
-      } else {
-          line.style.background = '#FFF';
-      };
+  document.addEventListener("DOMContentLoaded", function() {
+    const fadeIn = document.querySelectorAll('.fade-in');
+    fadeIn.forEach(function(x)  {
+      x.classList.add('active');
     });
-  };
-  document.addEventListener("DOMContentLoaded", () => {
-    uiMenuLines.forEach((line) => {
-      line.style.background = '#FFF';
-    })
   });
-  window.onscroll = function() {colorChange()};
-<% end %>
+    const hero = document.querySelector('.calypso__hero');
+    const uiMenuLines = document.querySelectorAll('.ui-menu__line');
+    function colorChange() {
+      uiMenuLines.forEach(function(line)  {
+        if (document.body.scrollTop > hero.offsetHeight || document.documentElement.scrollTop > hero.offsetHeight) {
+            line.style.background = '#000';
+        } else {
+            line.style.background = '#FFF';
+        };
+      });
+    };
+    document.addEventListener("DOMContentLoaded", function() {
+      uiMenuLines.forEach(function(line)  {
+        line.style.background = '#FFF';
+      })
+    });
+    window.onscroll = function() {colorChange()};
+</script>
