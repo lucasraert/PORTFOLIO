@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Lucas Raert, product designer and developer based in Paris.">
-    <meta name="keywords" content="Lucas Raert, Product designer, Paris">
-    <meta name="author" content="Lucas Raert">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107287573-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)};
-      gtag('js', new Date());
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Lucas Raert, product designer and developer based in Paris.">
+  <meta name="keywords" content="Lucas Raert, Product designer, Paris">
+  <meta name="author" content="Lucas Raert">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107287573-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
 
-      gtag('config', 'UA-107287573-1');
-    </script>
-    <title>Lucas Raert - Digital Product Designer</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-  </head>
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= yield(:after_js) %>
-  </body>
+    gtag('config', 'UA-107287573-1');
+  </script>
+  <title>Lucas Raert - Digital Product Designer</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+  <%= yield(:after_js) %>
+  <script type="text/javascript">
+    const callback = function() {
+    const fadeIn = document.querySelectorAll('.fade-in');
+      fadeIn.forEach(function(x)  {
+        return x.classList.add('active');
+      });
+    };
+    document.addEventListener("DOMContentLoaded", callback)
+  </script>
+</body>
 </html>
