@@ -86,14 +86,19 @@
   #about section:last-child {
     padding: 0px 0px 100px;
   }
-  #about .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  #about .icon img {
+  max-width: 70px;
+  max-height: 70px;
+  margin-bottom: 20px;
+}
+  // #about .skills {
+  //   display: flex;
+  //   // flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
   #keyskills ul li{
-    flex-basis: auto;
+    flex-basis: 40%;
   }
 }
 @media screen and (max-width: 320px) {
