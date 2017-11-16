@@ -9,6 +9,7 @@ nav {
 #homenav {
   opacity: 0;
   transform:translateY(-20%);
+  z-index: 30;
 }
 #logo {
   width: 30px;
