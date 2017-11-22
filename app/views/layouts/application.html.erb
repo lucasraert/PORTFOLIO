@@ -25,14 +25,6 @@
   <%= yield %>
   <%= javascript_include_tag 'application' %>
   <%= yield(:after_js) %>
-  <script type="text/javascript">
-    const callback = function() {
-    const fadeIn = document.querySelectorAll('.fade-in');
-      fadeIn.forEach(function(x)  {
-        return x.classList.add('active');
-      });
-    };
-    document.addEventListener("DOMContentLoaded", callback)
-  </script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
