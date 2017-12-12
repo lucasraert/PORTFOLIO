@@ -49,7 +49,7 @@ nav {
 #home {
   width: 100%;
   min-height: 450px;
-  height: calc(85vh - 140px);
+  height: calc(88vh - 140px);
   display: flex;
   align-items: center;
   // transition: opacity .35s
@@ -140,6 +140,11 @@ nav {
     height: auto;
   }
 }
+@media (max-width: 1200px) and (orientation: landscape) {
+  #home .container {
+    padding: 0 40px 30px 60px;
+  }
+}
 @media (orientation: landscape) {
   nav {
     padding: 45px;
@@ -148,7 +153,7 @@ nav {
     min-height: 280px;
   }
   #home .container {
-    padding: 0 40px 30px 60px;
+    padding: 0 40px 30px 100px;
   }
   #home>.container img {
     width: 300px;
