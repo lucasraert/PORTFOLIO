@@ -7,8 +7,7 @@ nav {
   height: 140px;
 }
 #homenav {
-  opacity: 0;
-  transform:translateY(-20%);
+  // transform:translateY(-20%);
   z-index: 30;
 }
 #logo {
@@ -51,16 +50,14 @@ nav {
   width: 100%;
   min-height: 450px;
   height: calc(85vh - 140px);
-  opacity: 0;
+  display: flex;
+  align-items: center;
   // transition: opacity .35s
   // transition-delay: .5s;
 }
 #home>.container {
   width: 100%;
   padding: 150px;
-  position: absolute;
-  left: 0;
-  bottom: 100px;
   box-sizing: border-box;
 }
 #home>.container h1 {
