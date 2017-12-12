@@ -135,7 +135,8 @@ nav {
     padding: 45px;
   }
   #home {
-    min-height: 450px;
+    min-height: 350px;
+    height: calc(88vh - 100px);
   }
   #home .container {
     padding: 0 40px 30px 80px;
