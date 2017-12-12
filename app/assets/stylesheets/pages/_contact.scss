@@ -26,7 +26,7 @@
 }
 #contact header {
   h1, h3 {
-  max-width: 920px;
+  max-width: 760px;
   margin: 20px auto;
   text-align: center;
   }
@@ -51,7 +51,12 @@
     text-decoration: none;
   }
 }
-
+@media screen and (max-width: 768px) {
+  #contact header {
+    h1, h3 {
+      max-width: 650px;
+  }
+}
 @media screen and (max-width: 768px) {
   #contact header .container {
     padding-top: 70px;
