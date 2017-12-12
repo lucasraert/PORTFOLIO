@@ -64,6 +64,22 @@ nav {
   position: relative;
   top: 21px;
 }
+@media (orientation: landscape) {
+  nav {
+    padding: 45px;
+  }
+  #home {
+    min-height: 280px;
+  }
+  #home .container {
+    padding: 0 40px 30px 100px;
+  }
+  #home>.container img {
+    width: 300px;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #home>.container {
     padding: 6vh 150px;
@@ -136,21 +152,6 @@ nav {
   }
   #home {
     min-height: 450px;
-  }
-  #home .container {
-    padding: 0 40px 30px 100px;
-  }
-  #home>.container img {
-    width: 300px;
-    height: auto;
-  }
-}
-@media (orientation: landscape) {
-  nav {
-    padding: 45px;
-  }
-  #home {
-    min-height: 280px;
   }
   #home .container {
     padding: 0 40px 30px 100px;
