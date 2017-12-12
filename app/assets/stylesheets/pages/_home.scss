@@ -81,6 +81,11 @@ nav {
     height: auto;
   }
 }
+@media (max-width: 1200px) and (orientation: landscape) {
+  #home .container {
+    padding: 0 40px 30px 60px;
+  }
+}
 @media screen and (max-width: 768px) {
   #home {
     min-height: calc(85vh - 100px);
@@ -155,10 +160,6 @@ nav {
     height: auto;
   }
 }
-@media (max-width: 1200px) and (orientation: landscape) {
-  #home .container {
-    padding: 0 40px 30px 60px;
-  }
-}
+
 
 
