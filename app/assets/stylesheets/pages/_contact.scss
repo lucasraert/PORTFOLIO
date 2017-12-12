@@ -2,9 +2,14 @@
   position: relative;
   overflow: hidden;
   display: block;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #contact header {
-  min-height: 90vh;
+  height: 90vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +21,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-}
-#contact header .social-container {
-  width: 500px;
-  padding-bottom: 200px;
-  // opacity: 0;
-  // transform:translateY(40%);
 }
 #contact header {
   h1, h3 {
@@ -32,9 +30,13 @@
   }
 }
 #contact ul {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+#contact li {
+  margin: 0 20px;
 }
 #contact .social img {
   width: 48px;
@@ -60,7 +62,6 @@
 }
 @media screen and (max-width: 768px) {
   #contact header .container {
-    padding-top: 70px;
     margin: 0 40px;
   }
   #contact header .social-container {
@@ -82,9 +83,6 @@
       max-width: 260px;
       line-height: 25px;
     }
-  }
-   #contact header .container {
-    padding-top: 50px;
   }
   #contact header .social-container {
     width: 280px;
@@ -125,22 +123,5 @@
     margin: 0 40px;
     max-height: 100%;
     min-height: 100%;
-  }
-  #contact header>.container {
-    margin: 100px auto 40px;
-    position: static;
-  }
-  #contact header>.social-container {
-    margin: 100px auto 50px;
-    position: static;
-  }
-  #contact header .social-container {
-    padding-bottom: 80px;
-  }
-}
-@media (orientation: landscape) {
-  #contact header {
-    margin: 0 60px;
-    min-height: 100vh;
   }
 }
