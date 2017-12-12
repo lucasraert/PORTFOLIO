@@ -121,12 +121,15 @@
     min-height: 100%;
   }
   #contact header>.container {
-    margin: 150px auto 40px;
+    margin: 130px auto 40px;
     position: static;
   }
   #contact header>.social-container {
-    margin: 150px auto 50px;
+    margin: 100px auto 50px;
     position: static;
+  }
+  #contact header .social-container {
+    padding-bottom: 100px;
   }
 }
 @media (max-height: 650px) and (max-width: 1280px) and (orientation: landscape) {
