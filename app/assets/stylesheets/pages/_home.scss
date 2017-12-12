@@ -49,7 +49,8 @@ nav {
 }
 #home {
   width: 100%;
-  min-height: calc(85vh - 140px);
+  min-height: 450px;
+  height: calc(85vh - 140px);
   opacity: 0;
   // transition: opacity .35s
   transition-delay: .5s;
@@ -127,7 +128,7 @@ nav {
     height: auto;
   }
 }
-@media (max-height: 560px) and (orientation: landscape) {
+@media (max-height: 650px) and (orientation: landscape) {
   nav {
     padding: 45px;
   }
