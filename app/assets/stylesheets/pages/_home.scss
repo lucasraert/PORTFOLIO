@@ -53,7 +53,7 @@ nav {
   height: calc(85vh - 140px);
   opacity: 0;
   // transition: opacity .35s
-  transition-delay: .5s;
+  // transition-delay: .5s;
 }
 #home>.container {
   width: 100%;
@@ -133,7 +133,7 @@ nav {
     padding: 45px;
   }
   #home {
-    min-height: 300px;
+    min-height: 450px;
   }
   #home .container {
     padding: 0 40px 30px;

@@ -109,6 +109,11 @@
   padding-bottom: 2px;
   }
 }
+@media (max-height: 800px) {
+  #contact header .social-container {
+    padding-bottom: 100px;
+  }
+}
 @media (max-height: 650px) and (orientation: landscape) {
   #contact header {
     margin: 0 40px;
@@ -122,6 +127,9 @@
   #contact header>.social-container {
     margin: 150px auto 50px;
     position: static;
+  }
+  #contact header .social-container {
+    padding-bottom: 100px;
   }
 }
 @media (max-height: 650px) and (max-width: 1280px) and (orientation: landscape) {
