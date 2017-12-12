@@ -4,7 +4,7 @@
   display: block;
 }
 #contact header {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,11 +16,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 #contact header .social-container {
   width: 500px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   // opacity: 0;
   // transform:translateY(40%);
 }
@@ -51,6 +51,7 @@
     text-decoration: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   #contact header .container {
     padding-top: 70px;
