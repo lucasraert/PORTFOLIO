@@ -51,10 +51,11 @@
     text-decoration: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #contact header {
     h1, h3 {
       max-width: 650px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
