@@ -140,11 +140,6 @@ nav {
     height: auto;
   }
 }
-@media (max-width: 1200px) and (orientation: landscape) {
-  #home .container {
-    padding: 0 40px 30px 60px;
-  }
-}
 @media (orientation: landscape) {
   nav {
     padding: 45px;
@@ -158,6 +153,11 @@ nav {
   #home>.container img {
     width: 300px;
     height: auto;
+  }
+}
+@media (max-width: 1200px) and (orientation: landscape) {
+  #home .container {
+    padding: 0 40px 30px 60px;
   }
 }
 
