@@ -120,7 +120,7 @@
     padding-bottom: 100px;
   }
 }
-@media (max-height: 650px) and (orientation: landscape) {
+@media (max-height: 650px) {
   #contact header {
     margin: 0 40px;
     max-height: 100%;
@@ -138,8 +138,8 @@
     padding-bottom: 80px;
   }
 }
-@media (max-height: 650px) and (max-width: 1280px) and (orientation: landscape) {
-  header {
+@media (orientation: landscape) {
+  #contact header {
     margin: 0 60px;
     min-height: 100vh;
   }
