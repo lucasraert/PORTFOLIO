@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px;
+  padding: 70px 150px;
   height: 140px;
 }
 #homenav {
@@ -46,6 +46,10 @@ nav {
   transition:all 0.6s;
   transform:translateY(0%) scale(1) !important;
 }
+.bold {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
 #home {
   width: 100%;
   min-height: 450px;
@@ -56,13 +60,10 @@ nav {
   // transition-delay: .5s;
 }
 #home>.container {
-  width: 100%;
-  padding: 150px;
+  max-width: 1100px;
   box-sizing: border-box;
-}
-#home>.container h1 {
-  position: relative;
-  top: 21px;
+  margin: 0;
+  padding: 0 0 0 150px;
 }
 @media screen and (max-width: 1400px) {
   #home>.container {

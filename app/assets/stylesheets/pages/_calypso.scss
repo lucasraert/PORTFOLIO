@@ -215,6 +215,10 @@ section {
   #calypso section {
     padding: 60px 0;
   }
+  #calypso #surfers {
+    background-size: cover;
+    height: 70vh;
+  }
 }
 @media screen and (max-width: 320px) {
   .calypso-smartphone img {
