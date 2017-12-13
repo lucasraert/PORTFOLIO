@@ -1,15 +1,18 @@
-<div id="homenav">
+<!-- <div id="homenav">
   <nav>
-    <%= link_to root_path do %>
+    <%#= link_to root_path do %>
     <%#= image_tag "logo.png", id:"logo"%>
     <p>Lucas Raert</p>
-    <% end %>
+    <%# end %>
     <a href="/hire" class="hire-link">HIRE ME</a>
   </nav>
-</div>
+</div> -->
+<darklight>
+  <light>
 <div id="home">
   <div class="container">
-    <h2 class='bold'>I conceive, design and build experiences that empower users through accessible and delightful design.</h2>
+<!--     <h3 class='intro'>Lucas Raert</h3> -->
+    <h2 class='intro-description'>I'm Lucas Raert. I conceive, design and build experiences that empower users through accessible and delightful design.</h2>
     <div class="hire-link-mb">
       <a href="/hire" class="hire-link-mb__content">HIRE ME</a>
     </div>
@@ -24,7 +27,7 @@
     <%= image_tag "pmmockup.png" %>
     </div>
     <h1>Product Manual</h1>
-    <h3>Curated resources for product people</h3>
+    <h4>Curated resources for product people</h4>
     <div class="button-container">
       <a href="https://www.productmanual.co/" class="button">
         Visit Website
@@ -36,7 +39,7 @@
   <div class="block-text center-content u-margin" id="work-calypso">
     <%= image_tag "workcalypso.png", id:"work-phone"%>
     <h1>Calypso</h1>
-    <h3>Turn everyone into surf travel agents</h3>
+    <h4>Turn everyone into surf travel agents</h4>
     <div class="button-container">
       <a href="/calypso" class="button">
         Case study
@@ -47,8 +50,8 @@
 <div id="contact" class='fade-in'>
   <header>
     <div class="container">
-      <h1>Let's build beautiful and meaningful things together.</h1>
-      <h3>Send me an email at <a href="mailto:lucasraert@gmail.com">lucasraert@gmail.com</a> and I will get back to you as soon as possible.</h3>
+      <h2>Let's build beautiful and meaningful things together.</h2>
+      <h4>Send me an email at <a href="mailto:lucasraert@gmail.com">lucasraert@gmail.com</a> and I will get back to you as soon as possible.</h4>
       <ul class="social">
         <li><%= link_to image_tag('linkedin.svg'), "http://www.linkedin.com/in/lucasraert" %></li>
         <li><%= link_to image_tag('github-logo.svg'), "http://www.github.com/lucasraert" %></li>
@@ -58,3 +61,5 @@
     </div>
   </header>
 </div>
+</light>
+</darklight>
